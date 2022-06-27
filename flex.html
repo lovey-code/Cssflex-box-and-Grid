@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+    <nav>
+<ul id="nav">
+    <li><a href="flex.html">Flex design</a></li>
+    <li><a href="grid.html">Grid design</a></li>
+    </ul>
+    </nav>
+    </header>
+<body>
+    <main> 
+        <div class="box-container">
+        <div class="item-a">
+            <div class="content">
+            <div class="image"><img src="icon-sedans.svg" alt="none" width="30" height="15"></div>
+            <h2>
+                SEDANS
+            </h2>
+            <p>Choose a sedan for it's affordability and excellent fuel economy. 
+                Ideal for cruising in the city or on your next road trip
+            </p>
+            <button class="btn btn1"> Learn More </button>
+        </div>
+    </div>
+</div>
+
+        <div class="box-container">
+        <div class="item-b">
+            <div class="content"> 
+            <div class="image"><img src="icon-suvs.svg" alt="none" width="30" height="15"></div>
+ 
+         <h2>
+          SUVS
+        </h2>
+          <p>
+              Take an Suv for it's spacious interior, power, and versatility.
+               Perfect for your next family vacation and off-road adventures.
+               </p>
+               <button class="btn btn2"> Learn More </button>
+        </div>
+        </div>
+    </div>
+        <div class="box-container">
+             <div class="item-c">
+                <div class="content">
+                <div class="image"><img src="icon-luxury.svg" alt="none" width="30" height="15"></div>
+             
+                <h2>
+               LUXURY     
+                </h2> 
+                <p>
+                   Cruise in the best car branch without the bloated prices.
+                    Enjoy the enhanced content comfort of a luxury rental and arrive in style.    
+                   </p>
+                   <button class="btn btn3"> Learn More </button>
+                   </div>
+                </div>
+            </div>
+    </main>
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;*/
+ }
+ nav ul{
+    width: 100%;
+        float: left;
+        margin: 0 0 3em 0;
+        padding: 0;
+        list-style: none;
+        background-color:none;
+        margin-right: 20px;
+  }
+nav ul li {
+  float: left;; 
+  line-height: 80px;
+  margin: 0 5px;
+  align-content: center; 
+}
+nav ul li a{
+ color: black; 
+ display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 5px;
+  border: 3px;
+  text-transform: uppercase;
+}
+ body {
+    background-color:  hsl(0, 0%, 95%);
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+}
+main{
+    width: 60%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 100px;
+    padding: 15px;
+    min-height: 430px;
+}
+h2 {
+    color: hsl(0, 0%, 95%); 
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 20px 0;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+p {  
+    font-weight: 400;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);  
+    font-family: 'Big Shoulders Display', cursive;
+}
+.btn{
+    margin: 40px 0;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+.btn1 {
+    color:hsl(31, 77%, 52%);
+}
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.4s;
+}
+.item-a {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.image {
+    margin-bottom: 20px;
+}
+
+.item-b{
+    background-color: hsl(184, 100%, 22%);
+    padding:2em ;
+    
+}
+
+.item-c{
+    background-color: hsl(179, 100%, 13%);
+    padding:2em ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+    </style>
+    
+</body>
+</html>
